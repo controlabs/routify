@@ -1,7 +1,7 @@
 {
     "name": "controlabs/routify",
     "type": "library",
-    "description": "PHP Uncoupled Routing",
+    "description": "PHP Route Abstraction",
     "keywords": ["PHP", "routing"],
     "homepage": "https://github.com/controlabs/routify",
     "license": [
@@ -21,7 +21,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Controlabs\\Routify\\Tests\\": "tests/"
+            "Controlabs\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable",
