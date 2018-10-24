@@ -2,7 +2,7 @@
 
 namespace Controlabs\Routify;
 
-class Routify
+class Routify implements RoutifyInterface
 {
     /**
      * The route groups.
@@ -25,11 +25,7 @@ class Routify
     }
 
     /**
-     * Start a group
-     *
-     * @param string  $group
-     *
-     * @return $this
+     * @inheritdoc
      */
     public function group(string $group)
     {
@@ -38,11 +34,7 @@ class Routify
     }
 
     /**
-     * Start a group
-     *
-     * @param string  $group
-     *
-     * @return $this
+     * @inheritdoc
      */
     public function startGroup(string $group)
     {
@@ -51,9 +43,7 @@ class Routify
     }
 
     /**
-     * Ends a group
-     *
-     * @return $this
+     * @inheritdoc
      */
     public function endGroup()
     {
@@ -62,9 +52,7 @@ class Routify
     }
 
     /**
-     * Get all routes.
-     *
-     * @return array
+     * @inheritdoc
      */
     public function routes()
     {
@@ -72,13 +60,7 @@ class Routify
     }
 
     /**
-     * Method DELETE.
-     *
-     * @param  string  $route
-     * @param  string  $handler
-     * @param  string  $action
-     *
-     * @return $this
+     * @inheritdoc
      */
     public function delete(string $route, string $handler, string $action)
     {
@@ -87,13 +69,7 @@ class Routify
     }
 
     /**
-     * Method GET.
-     *
-     * @param  string  $route
-     * @param  string  $handler
-     * @param  string  $action
-     *
-     * @return $this
+     * @inheritdoc
      */
     public function get(string $route, string $handler, string $action)
     {
@@ -102,13 +78,7 @@ class Routify
     }
 
     /**
-     * Method HEAD.
-     *
-     * @param  string  $route
-     * @param  string  $handler
-     * @param  string  $action
-     *
-     * @return $this
+     * @inheritdoc
      */
     public function head(string $route, string $handler, string $action)
     {
@@ -117,13 +87,7 @@ class Routify
     }
 
     /**
-     * Method OPTIONS.
-     *
-     * @param  string  $route
-     * @param  string  $handler
-     * @param  string  $action
-     *
-     * @return $this
+     * @inheritdoc
      */
     public function options(string $route, string $handler, string $action)
     {
@@ -132,13 +96,7 @@ class Routify
     }
 
     /**
-     * Method PATCH.
-     *
-     * @param  string  $route
-     * @param  string  $handler
-     * @param  string  $action
-     *
-     * @return $this
+     * @inheritdoc
      */
     public function patch(string $route, string $handler, string $action)
     {
@@ -147,13 +105,7 @@ class Routify
     }
 
     /**
-     * Method POST.
-     *
-     * @param  string  $route
-     * @param  string  $handler
-     * @param  string  $action
-     *
-     * @return $this
+     * @inheritdoc
      */
     public function post(string $route, string $handler, string $action)
     {
@@ -162,13 +114,7 @@ class Routify
     }
 
     /**
-     * Method PUT.
-     *
-     * @param  string  $route
-     * @param  string  $handler
-     * @param  string  $action
-     *
-     * @return $this
+     * @inheritdoc
      */
     public function put(string $route, string $handler, string $action)
     {
