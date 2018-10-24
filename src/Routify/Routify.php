@@ -56,7 +56,7 @@ class Routify implements RoutifyInterface
      */
     public function routes()
     {
-        return $this->routeCollection->get();
+        return $this->routeCollection;
     }
 
     /**

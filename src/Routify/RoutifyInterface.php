@@ -32,7 +32,7 @@ interface RoutifyInterface
     /**
      * Get all routes.
      *
-     * @return array
+     * @return \Controlabs\Routify\RouteCollection
      */
     public function routes();
 
