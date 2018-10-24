@@ -19,6 +19,8 @@ Routify is a routing abstraction that allow to define the routes only once and u
 
 ## How to use
 
+- **Slim Framework**: https://github.com/controlabs/routify-slim-handler
+
 ## License
 
 This software is open source, licensed under the The MIT License (MIT). See [LICENSE](https://github.com/controlabs/routify/blob/master/LICENSE) for details.
