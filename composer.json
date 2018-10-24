@@ -1,7 +1,7 @@
 {
     "name": "controlabs/routify",
     "type": "library",
-    "description": "PHP Route Abstraction",
+    "description": "PHP Routing Abstraction",
     "keywords": ["PHP", "routing"],
     "homepage": "https://github.com/controlabs/routify",
     "license": [
