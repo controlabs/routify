@@ -30,7 +30,7 @@ class RouteCollection implements Countable, IteratorAggregate
     }
 
     /**
-     * Get all of the routes in the collection.
+     * Get all routes.
      *
      * @return array
      */

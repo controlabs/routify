@@ -69,21 +69,30 @@ class Route
 
 
     private $action;
-    // private $group;
     private $handler;
     private $httpMethod;
     private $route;
 
     public function __construct(
-        $httpMethod,
-        $route,
-        $handler,
-        $action
+        string $httpMethod,
+        string $route,
+        string $handler,
+        string $action
     ) {
         $this->setHttpMethod($httpMethod);
         $this->setRoute($route);
         $this->setHandler($handler);
         $this->setAction($action);
+    }
+
+    public function action()
+    {
+        return $this->action;
+    }
+
+    public function handler()
+    {
+        return $this->handler;
     }
 
     public function method()
@@ -96,7 +105,7 @@ class Route
         return $this->route;
     }
 
-    protected function setAction($action)
+    protected function setAction(string $action)
     {
         if (empty($action)) {
             throw new RouteException("Invalid action.");
@@ -104,7 +113,7 @@ class Route
         $this->action = $action;
     }
 
-    protected function setHandler($handler)
+    protected function setHandler(string $handler)
     {
         if (empty($handler)) {
             throw new RouteException("Invalid handler.");
@@ -112,7 +121,7 @@ class Route
         $this->handler = $handler;
     }
 
-    protected function setHttpMethod($httpMethod)
+    protected function setHttpMethod(string $httpMethod)
     {
         if (!in_array($httpMethod, [self::GET, self::HEAD, self::POST, self::PUT, self::DELETE, self::CONNECT, self::OPTIONS, self::TRACE, self::PATCH])) {
             throw new RouteException("Invalid HTTP method.");
@@ -120,7 +129,7 @@ class Route
         $this->httpMethod = $httpMethod;
     }
 
-    protected function setRoute($route)
+    protected function setRoute(string $route)
     {
         if (empty($route)) {
             throw new RouteException("Invalid route.");
